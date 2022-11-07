@@ -1,0 +1,111 @@
+---
+layout: default
+---
+
+<!-- Layout for Module Homepages -->
+
+<a href="../">📚Modules</a>
+
+
+<div id=modMain-content>
+    <div id=modMain-Left>
+        <div id=modMain-notes>
+
+
+
+
+            {%- if site.data[page.module].Notes and site.data[page.module].Notes.size >0 -%}  
+            {% assign hasPrimary = false%}
+            
+            
+
+            
+            {% for item in site.data[page.module].Notes %}
+                {%- if item.primary -%}
+                    {% assign hasPrimary = true%}
+                    
+                    <a href="{{item.link | default: item.name}}">
+                        <h2>{{item.title | default: item.name | replace: "_", " " }}</h2>
+                    </a>
+                    <a href="{{item.link | default: item.name}}/onePage" style="text-align: center;margin: auto;">
+                        One Page
+                    </a>
+                    <div id="modMain-Contents" >    
+                        <h3>Topics</h3>
+                        <ul>
+                        {%for SubPage in item.order%}
+                        
+                            <li>
+                                {% assign testURL = page.url | append: item.name | append:"/" |append: SubPage %}
+                                {% assign var = nil %}
+                                <a href="{{item.link | default: item.name}}/{{SubPage}}">
+                                    {%for testPage in site.pages%}
+                                        {%- if testURL == testPage.url -%}
+                                            {% assign var = testPage.title %}
+
+                                        {%-endif-%}
+                                    {%endfor%}
+                                    {{ var | default: SubPage | remove: ".html" | replace: "_", " " | capitalize }}
+                                </a>
+                            </li>
+                        {%endfor%}
+                        </ul>
+                    </div>
+                {%-endif-%}
+            {% endfor %}
+            {% endif %}
+            {%-if hasPrimary !=true-%}
+                <h2>Primary Notes</h2>
+                Unfortunately there are no primary notes for this module. Maybe you can create some.
+            {%-endif-%}
+
+
+
+
+            
+        </div>
+        <button id=modMain-index onclick="location.href='./modIndex.html'"">
+            More Resources
+        </button>
+    </div>
+    <div id=modMain-Right>
+        <div id=modMain-cribSheets>
+            <h2> Crib Sheets </h2>
+            {%- if site.data[page.module].CribSheets and 
+                site.data[page.module].CribSheets.size >0 -%}  
+            
+            
+            <ul>
+            {% for item in site.data[page.module].CribSheets %}
+                <a href="{{item.link | default: item.name}}">
+                    <li><h3>{{item.title | default: item.name | replace: "_", " " | capitalize }}</h3></li>
+                </a>
+            {% endfor %}
+            </ul>
+            {% else %}
+                Unfortunately there are no crib Sheets available maybe you can create one 
+            {% endif %}
+        </div>
+        <div id=modMain-questions>
+            <h2> Questions </h2>
+            {%- if site.data[page.module].Questions.altQuestions.size >0 -%}  
+            <ul>
+            {% for item in site.data[page.module].Questions.altQuestions %}
+                <div>
+                    
+                    <a href="{{item.link | default: item.name}}">
+                        <li><h3>{{item.title | default: item.name | replace: "_", " " | capitalize }}</h3></li>
+                    </a>
+                </div>
+            {% endfor %}
+            </ul>
+            {% else %}
+                Unfortunately there are no question sheets available maybe you can create one 
+            {% endif %}
+        </div>
+    </div>
+    
+
+</div>
+
+{{ content }}
