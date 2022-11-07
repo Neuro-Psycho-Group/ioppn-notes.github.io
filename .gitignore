@@ -1,0 +1,9 @@
+.token
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+Gemfile.lock
+404.html
+node_modules

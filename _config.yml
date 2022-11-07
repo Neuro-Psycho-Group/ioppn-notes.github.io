@@ -1,0 +1,155 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Computer Science Revision Guides
+description: >- # this means to ignore newlines until "baseurl:"
+  A collection of revision notes summarising modules taught on the Computer Science course at the University of Warwick
+repository: CSRG-Group/dcs-notes.github.io
+url: "https://warwick.guide"
+baseurl: ""
+# Build settings
+# theme: jekyll-theme-cayman
+plugins:
+  - jekyll-feed
+  - jekyll-github-metadata
+markdown: kramdown
+github:
+  repository_url: https://github.com/CSRG-Group/dcs-notes.github.io
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+collections:
+  CS118:
+    output: true
+    order:
+      - part1.md
+      - part2.md
+      - part3.md
+      - part4.md
+      - part5.md
+      - part6.md
+      - part7.md
+  CS126:
+    output: true
+    order:
+      - arrays-and-lists.md
+      - algorithm-analysis.md
+      - recursive-algorithms.md
+      - stacks-and-queues.md
+      - maps-hash-tables-and-sets.md
+      - trees.md
+      - priority-queues.md
+      - skip-lists.md
+      - balanced-trees.md
+      - graphs.md
+      - digraphs.md
+      - general-algorithms.md
+  CS130:
+    output: true
+  CS131:
+    output: true
+    order:
+     - part1.md
+     - part2.md
+     - part3.md
+     - part4.md
+     - part5.md
+  CS132:
+    output: true
+    order:
+      - part1.md
+      - part2.md
+      - part3.md
+      - part4.md
+      - part5.md
+      - part6.md
+  CS139:
+    output: true
+    order:
+      - HTML.md
+      - CSS.md
+      - PHP.md
+      - JavaScript.md
+      - SQL.md
+      - Python.md
+      - Flask.md
+      - Theory1.md
+      - Theory2.md
+      - Theory3.md
+      - Theory4.md
+      - Theory5.md
+      - Theory6.md
+  CS140:
+    output: true
+    order:
+      - part1.md
+      - part2.md
+      - part3.md
+      - part4.md
+      - part5.md
+      - part6.md
+      - secure-email.md
+      - part7.md
+      - part8.md
+      - part9.md
+  CS141:
+    output: true
+    order:
+      - part1.md
+      - part2.md
+      - part3.md
+      - datatypes.md
+      - equationalReasoning.md
+      - FAM.md
+      - type-level-programming.md
+  QUIZ:
+    output: true
+  contributors:
+    output: true
+  cribSheets:
+    output: true
+  tutorials:
+    output: true
+  modules:
+    output: true
