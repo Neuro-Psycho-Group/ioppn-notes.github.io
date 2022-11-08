@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Welcome To IOPPN's Unofficial Neuroscience & Psychology Handbook 👋
+# Welcome To IOPPN's Unofficial Neuroscience & Psychology Handbook  👋
 
 Or should we call it handsite? Anyhow, here we present a collection of community notes for key modules covered during the Yr1 of Neuroscience and Psychology BSc programme at King's College London.
 
@@ -10,17 +10,17 @@ It is entirely student-run, ergo, not affiliated with nor endorsed by the Univer
 
 
 <form id="MainButton" action="./modules"> 
-<button>👉See Module Notes Here👈</button>
+<button>See Module Notes Here</button>
 </form>
 
 
-## Sharing Is Caring 🫂
+## Sharing Is Caring  🫂
 
 We encourage pull requests from anyone who is happy to share their notes, such that everyone on our course can benefit from well-written full-coverage content. And of course, feel free to provide appropriate attribution per page created!
 
 [Tutorials on Contributing](./CSRGContributing/)
 
-## Contributors 🎓
+## Contributors  🎓
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
