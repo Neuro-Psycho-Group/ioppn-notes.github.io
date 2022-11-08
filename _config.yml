@@ -18,7 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Neuro & Psycho Revision Guides
+title:                                                                                                                                     
+,--.  ,--.                                 ,------.                     ,--.                 ,----.                                 
+|  ,'.|  | ,---. ,--.,--.,--.--. ,---.     |  .--. ' ,---.,--. ,--.,---.|  ,---.  ,---.     '  .-./   ,--.--. ,---. ,--.,--. ,---.  
+|  |' '  || .-. :|  ||  ||  .--'| .-. |    |  '--' |(  .-' \  '  /| .--'|  .-.  || .-. |    |  | .---.|  .--'| .-. ||  ||  || .-. | 
+|  | `   |\   --.'  ''  '|  |   ' '-' '    |  | --' .-'  `) \   ' \ `--.|  | |  |' '-' '    '  '--'  ||  |   ' '-' ''  ''  '| '-' ' 
+`--'  `--' `----' `----' `--'    `---'     `--'     `----'.-'  /   `---'`--' `--' `---'      `------' `--'    `---'  `----' |  |-'  
+                                                          `---'                                                             `--'    
 description: >- # this means to ignore newlines until "baseurl:"
   A collection of revision notes summarising modules taught on the Neuroscience and Psychology course at King's College London
 repository: Neuro-Psycho-Group/ioppn-notes.github.io
