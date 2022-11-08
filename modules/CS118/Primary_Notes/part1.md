@@ -8,7 +8,7 @@ title: Variables, Number Systems, and I/O
 
 **Variables** are what we store _values_ in. A value can be anything from a primitive value, all the way up to an object instance. They're declared like this:
 
-``` java
+``` python
 // Creating an integer variable
 int x = 5;
 
