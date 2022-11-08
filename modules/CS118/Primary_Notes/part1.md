@@ -1,7 +1,7 @@
 ---
 layout: notes
 part: true
-title: Variables, Number Systems, and I/O
+title: For University Course Knowledge Examining R
 ---
 
 ## Variables
@@ -65,7 +65,7 @@ Therefore, inverting all the bits `0xFFFFFFFF` results in `0000 0000 0000 0000 0
 
 ### Java’s numeric data types
 
-| Type    | Bytes          | Value in Decimal                         |
+| Type    | Bytes           | Value in Decimal                         |
 | ------- | --------------- | ---------------------------------------- |
 | `byte`  | 1 byte (8 bits) | -128 to +127                             |
 | `short` | 2 bytes         | -32768 to +32767                         |
