@@ -20,7 +20,7 @@ We encourage pull requests from anyone who is happy to share their notes, such t
 
 [Tutorials on Contributing](./CSRGContributing/)
 
-## Contributors ✨
+## Contributors 🎓
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
