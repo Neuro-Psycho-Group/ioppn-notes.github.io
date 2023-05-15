@@ -108,7 +108,7 @@ If you have any additional questions, or want to become more involved in contrib
 <br>
 
 
-## Dank Memes
+## Dank Memes (Shameless CSRG Plug -- TODO: change)
 
 ![notesTradeOffer](/assets/images/memes/notesTradeOffer.jpg)
 
